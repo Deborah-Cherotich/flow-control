@@ -25,7 +25,7 @@ function arrayOfNumbers() {
     let arrayNum = [1, 2, 3, 4, 5, 6, 7, 8,]
     arrayNum.forEach(k => {
 
-        while (arrayNum < 4) { break; }
+        while (arrayNum< 4) { break; }
         console.log(arrayNum);
 
     })
@@ -66,11 +66,13 @@ arrayString();
 
 // function that takes a string as input and reverses it using a while loop.
 
-function reverseString() {
-    let subject = ["science", "english", "kiswahili"]
-    let b = subject.split("").reverse().join(""
+function reverseString(subject) {
+    const reversedString = 
+    subject.split("").reduce((acc,char)=> char + acc, "")
+    console.log(reversedString)
+    
 
-    )
-    console.log(subject);
+    
+
 }
-reverseString();
+reverseString("science");
